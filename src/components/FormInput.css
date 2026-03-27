@@ -1,0 +1,45 @@
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.required-indicator {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.form-input,
+.form-textarea {
+  background: #171717;
+  border: 1px solid #2F2F2F;
+  border-radius: 8px;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #9E7FFF;
+  background: #1a1a1a;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #A3A3A3;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}

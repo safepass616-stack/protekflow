@@ -1,0 +1,58 @@
+@import './styles/reset.css';
+@import './styles/tokens.css';
+
+.app-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: var(--space-lg);
+}
+
+.app-loading-skeleton {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.app-loading-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.app-loading-header-actions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.app-loading-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.app-loading-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .app-loading-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .app-loading-cards {
+    grid-template-columns: 1fr;
+  }
+}
